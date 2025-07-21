@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { FaUserCircle } from 'react-icons/fa'
 import { FaHouse } from 'react-icons/fa6'
 
 const navLinks = [
@@ -48,6 +49,14 @@ const Nav = () => {
               <p className='font-medium hover:text-yellow-300'>{navlink.label}</p>
             </Link>
           })}
+        </div>
+        {/* login and burgermenu */}
+        <div className='flex items-center space-x-4'>
+          {/* login button */}
+          <div className='flex items-center cursor-pointer text-white space-x-2 hover:text-rose-400 transition-all duration-200'>
+            <FaUserCircle className='w-5 h-5' />
+            <p className='font-bold text-xs sm:text-base'>Login / Register</p>
+          </div>
         </div>
       </div>
     </div>
