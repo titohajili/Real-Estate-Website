@@ -9,4 +9,3 @@ const MobileNav = () => {
 }
 
 export default MobileNav
-g
