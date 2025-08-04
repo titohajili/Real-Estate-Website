@@ -6,9 +6,13 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FaHouse } from 'react-icons/fa6'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
+type Props = {
+  openNav:()=>void
+}
 
 
-const Nav = () => {
+
+const Nav = ({openNav}: Props) => {
 
   const [navBg, setNavBg] = useState(false);
 
@@ -52,7 +56,7 @@ const Nav = () => {
             <p className='font-bold text-xs sm:text-base'>Login / Register</p>
           </div>
           {/* burger menu */}
-          <HiBars3BottomRight className='sm:w-8 sm:h-6 w-6 h-6 cursor-pointer text-white lg:hidden' />
+          <HiBars3BottomRight onClick={openNav} className='sm:w-8 sm:h-6 w-6 h-6 cursor-pointer text-white lg:hidden' />
         </div>
       </div>
     </div>
