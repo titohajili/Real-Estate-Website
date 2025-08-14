@@ -11,7 +11,7 @@ const RespomsiveNav = () => {
 
   return (
     <div>
-      <Nav oprnNav={openNavHandler}/>
+      <Nav openNav={openNavHandler}/>
       <MobileNav showNav={showNav} closeNav={closeNavHandler}/>
     </div>
   )
