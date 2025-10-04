@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaSearch } from 'react-icons/fa'
 import { HiAdjustmentsHorizontal } from 'react-icons/hi2'
 
 const SearchBox = () => {
@@ -10,6 +11,9 @@ const SearchBox = () => {
             <div className='lg:flex hidden items-center cursor-pointer space-x-2'>
                 <HiAdjustmentsHorizontal className='text-gray-700 w-6 h-6'/>
                 <p className='text-gray-700 font-semibold'>Advanced</p>
+            </div>
+            <div className='w-12 h-12 bg-rose-600 flex items-center hover:bg-rose-800 transition-all duration-150 cursor-pointer justify-center text-white rounded-full'>
+              <FaSearch/>
             </div>
         </div>
       </div>
