@@ -16,10 +16,10 @@ const AppartmentTypeCard = ({type}: Props) => {
       <Image src={type.icon} alt={type.type} width={50} height={50} />
       <div className='mt-12'>
         <h1 className='text-lg font-bold'>{type.type}</h1>
-        <p className='mt-2 text-sm text-gray-800'>{type.number} Properties</p>
+        <p className='mt-2 text-sm text-gray-700'>{type.number} Properties</p>
       </div>
     </div>
   )
-}
+} 
 
 export default AppartmentTypeCard
