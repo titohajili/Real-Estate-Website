@@ -54,7 +54,7 @@ const PropertyCard = ({property}: Props) => {
           <div className='flex items-center space-x-4 text-gray-500'>
             <BiLinkExternal/>
             <BsPlusSquare/>
-            <BsHeart />
+            <BsHeart className=' hover:text-red-800' />
           </div>
         </div>
       </div>
