@@ -5,6 +5,8 @@ import Properties from './Properties/Properties'
 import CityProperties from './CityProperties/CityProperties'
 import BuildingFeature from './BuildingFeature/BuildingFeature'
 import Reviews from './Reviews/Reviews'
+import Blog from './Bolg/Blog'
+
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
       <CityProperties/>
       <BuildingFeature/>
       <Reviews/>
+      <Blog />
     </div>
   )
 }
