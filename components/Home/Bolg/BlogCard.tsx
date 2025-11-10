@@ -21,11 +21,11 @@ const BlogCard = ({blog}: Props) => {
         <Image src={blog.image} alt={blog.title} width={300} height={300} className='w-full' />
         <div className='p-6'>
           <div className='flex items-center justify-between'>
-            <div className='flex items-center skew-x-2'>
+            <div className='flex items-center space-x-2'>
               <BiCalendar className='text-rose-500' />
               <span className='text-sm text-gray-700'>{blog.date}</span>
             </div>
-            <div className='flex items-center skew-x-2'>
+            <div className='flex items-center space-x-2'>
               <BiMessage className='text-rose-500' />
               <span className='text-sm text-gray-700'>{blog.comment}</span>
             </div>
