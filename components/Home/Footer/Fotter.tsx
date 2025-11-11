@@ -57,6 +57,6 @@ const Fotter = () => {
       </div>
     </div>
   )
-}
+}  
 
 export default Fotter

@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import RespomsiveNav from "@/components/Home/Navbar/RespomsiveNav";
 import Footer from "../components/Home/Footer/Fotter"
+import ScrollTop from "@/components/Helper/ScrollTop";
 
 const font = Roboto({
   weight: ["100", "300","400","500", "700", "900"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <RespomsiveNav/>
         {children}
         <Footer/>
+        <ScrollTop/>
       </body>
     </html>
   );
