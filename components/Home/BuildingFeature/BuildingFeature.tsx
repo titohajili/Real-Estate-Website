@@ -9,8 +9,8 @@ const BuildingFeature = () => {
       <div className='w-[80%] mx-auto'>
         <SectionHeading heading='Explor Building Feature' />
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center mt-14'>
-            {buildings.map((building)=>{
-                return <div key={building.id}>
+            {buildings.map((building,i)=>{
+                return <div key={building.id} data-aos="fade-left" data-aos-delay={`${i * 150}`} data-aos-anchor-placement="top-center">
                     <BuildingFeatureCard building={building}  />
                 </div>
             })}
